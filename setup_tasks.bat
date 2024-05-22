@@ -2,11 +2,7 @@
 REM This batch file will set up the scheduled tasks for ThunderMaster
 
 REM Create the scheduled task folder and the first task
-schtasks /create /tn "\Bloatware_Palit\RUN_ThunderMaster" /tr "C:\Program Files\Thunder Master\ThPanel.exe" /sc onlogon /rl highest /f
-if %errorlevel% neq 0 exit /b %errorlevel%
-
-REM Set the task to only run when the user is logged on
-schtasks /change /tn "\Bloatware_Palit\RUN_ThunderMaster" /ru "SYSTEM" /rp ""
+schtasks /create /tn "\Bloatware_Palit\RUN_ThunderMaster" /tr "\"C:\Program Files\Thunder Master\ThPanel.exe\"" /sc onlogon /rl highest /f
 if %errorlevel% neq 0 exit /b %errorlevel%
 
 REM Create the batch file to kill Thunder Master
@@ -16,11 +12,7 @@ echo %batchFileContent% > "%batchFilePath%"
 if %errorlevel% neq 0 exit /b %errorlevel%
 
 REM Create the second scheduled task to kill Thunder Master after a delay
-schtasks /create /tn "\Bloatware_Palit\KILL_ThunderMaster" /tr "%batchFilePath%" /sc onlogon /rl highest /delay 0000:10 /f
-if %errorlevel% neq 0 exit /b %errorlevel%
-
-REM Set the second task to only run when the user is logged on
-schtasks /change /tn "\Bloatware_Palit\KILL_ThunderMaster" /ru "SYSTEM" /rp ""
+schtasks /create /tn "\Bloatware_Palit\KILL_ThunderMaster" /tr "\"%batchFilePath%\"" /sc onlogon /rl highest /delay 0000:10 /f
 if %errorlevel% neq 0 exit /b %errorlevel%
 
 echo Tasks have been created successfully.
