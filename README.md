@@ -1,5 +1,5 @@
 # palit_gpu_light_bat
-Change GPU color for Palit 4060/4070/4080/4090 and Kill ThunderMaster
+Change GPU color for Palit 4060/4070/4080/4090 and Kill ThunderMaster (Palit RTX LED light workaround)
 
 I was looking for how to change the color on my RTX 4070 Super Palit OC, but couldn't find a solution. I came to the fact that I select the color I want in Thunder Master settings and then close it so that it does not conflict with MSI Afterburner. This script automates this process
 
