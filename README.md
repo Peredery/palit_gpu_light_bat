@@ -7,11 +7,6 @@ I was looking for how to change the color on my RTX 4070 Super Palit OC, but cou
 
 - **Automatic Start and Stop**: This script ensures that ThunderMaster starts automatically at Windows startup, applies your configured color settings, and then closes after 10 seconds. This allows you to use ThunderMaster for setting colors without it running continuously, which helps avoid conflicts with other tools like MSI Afterburner.
 
-
-## Prerequisites
-
-- ThunderMaster installed
-
 ## Setup Instructions
 
 1. **Install ThunderMaster**
