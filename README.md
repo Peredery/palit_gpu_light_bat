@@ -30,7 +30,13 @@ I was looking for how to change the color on my RTX 4070 Super Palit OC, but cou
 
    1. Right-click on the `setup_tasks.bat` file and select `Run as administrator`. This ensures that the script has the necessary permissions to create and configure the scheduled tasks.
 
-   2. The script will create the following:
+   2. Reboot
+
+
+
+Note:
+The script will create the following:
+
       - A scheduled task folder named `Bloatware_Palit`.
       - A task named `RUN_ThunderMaster` that runs ThunderMaster at logon, hidden and with highest privileges.
       - A task named `KILL_ThunderMaster` that kills ThunderMaster 10 seconds after logon, hidden and with highest privileges.
