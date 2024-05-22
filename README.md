@@ -1,6 +1,8 @@
 # palit_gpu_light_bat
 Change GPU color for Palit 4060/4070/4080/4090 and Kill ThunderMaster
 
+I was looking for how to change the color on my RTX 4070 Super Palit OC, but couldn't find a solution. I came to the fact that I select the color I want in Thunder Master settings and then close it so that it does not conflict with MSI Afterburner. This script automates this process
+
 ## How It Works
 
 - **Automatic Start and Stop**: This script ensures that ThunderMaster starts automatically at Windows startup, applies your configured color settings, and then closes after 10 seconds. This allows you to use ThunderMaster for setting colors without it running continuously, which helps avoid conflicts with other tools like MSI Afterburner.
@@ -15,11 +17,11 @@ Change GPU color for Palit 4060/4070/4080/4090 and Kill ThunderMaster
 1. **Install ThunderMaster**
 
    - Download and install ThunderMaster from the official website.
-   - During the installation process, uncheck the option to start ThunderMaster automatically with Windows.
 
 2. **Configure ThunderMaster**
 
    - Open ThunderMaster.
+   - Uncheck the option to start ThunderMaster automatically with Windows in Setting
    - Navigate to the Color settings and select your desired color options.
    - Close ThunderMaster.
 
